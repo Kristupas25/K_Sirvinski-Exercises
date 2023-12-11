@@ -1,19 +1,25 @@
-let numberType = 15;
-let bigIntType = 15n;
-let stringType = 'Nice'
-let booleanType = true;
-let undefinedType;
-let nullType = {};
-nullType = null;
-let objectType = {};
+let numeris = 5;
+let didelisNumeris = 45678901234567890n;
+let stringas = "stringas";
+let tiesa = (true == false);
+let nera = undefined;
+let nullis = null;
+let zmogenas = {
+    vardas: undefined,
+    amzius: null
+};
 
-console.log(typeof numberType);
-console.log(typeof bigIntType);
-console.log(typeof stringType);
-console.log(typeof booleanType);
-console.log(typeof undefinedType);
-console.log(typeof nullType);
-console.log(typeof objectType);
+console.log(typeof numeris);
+console.log(typeof didelisNumeris);
+console.log(typeof stringas);
+console.log(typeof tiesa);
+console.log(typeof nera);
+console.log(typeof nullis);
+console.log(typeof zmogenas);
+
+console.log("-----");
+console.log("-----");
+console.log("-----");
 
 let number = 12;
 let otherNumber = 45.89;
@@ -25,8 +31,8 @@ let isEqual = (2 >= 0);
 let petName = undefined;
 let petAge = null;
 let human = {
-humanName: undefined,
-humanAge: null
+    humanName: undefined,
+    humanAge: null
 };
 
 console.log(typeof number);
