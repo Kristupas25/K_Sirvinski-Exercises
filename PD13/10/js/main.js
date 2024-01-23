@@ -1,13 +1,31 @@
-const p1 = 2.99;
-const p2 = 4.99;
-const p = 20; //nuolaida
-const kopiuros = 10;
-
-const p3 = (p2 - (p2 * p) / 100) + (p1 - (p1 * p) / 100);
+let a = 40;
+let b = 30;
+let c = 55;
 
 
-if (kopiuros >= p3) {
-    console.log(`Nu pasirodo iperki, bet kainuos ${p3.toFixed(2)}eur`);
+if (a >= b && a >= c) {
+    if (b >= c) {
+        sum = a + +b;
+        console.log(`didziausia suma yra ${sum} ir tai sudaryta is a ir b`)
+    } else {
+        sum = a + +c;
+        console.log(`didziausia suma yra ${sum} ir tai sudaryta is a ir c`)
+    }
+} else if (b >= a && b >= c) {
+    if (a >= c) {
+        sum = b + +a;
+        console.log(`didziausia suma yra ${sum} ir tai sudaryta is b ir a`)
+    } else {
+        sum = b + +c;
+        console.log(`didziausia suma yra ${sum} ir tai sudaryta is b ir c`)
+    }
 } else {
-    console.log(`neiperki nes bendrai kainuoja ${p3.toFixed(2)}eur, o tu turi tik ${kopiuros} euru`)
+    if (a >= b) {
+        sum = c + +a;
+        console.log(`didziausia suma yra ${sum} ir tai sudaryta is c ir a`)
+    } else {
+        sum = c + +b;
+        console.log(`didziausia suma yra ${sum} ir tai sudaryta is c ir b`)
+    }
 }
+
