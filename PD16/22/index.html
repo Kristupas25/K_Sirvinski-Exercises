@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Function Name</title>
+    
+</head>
+<body>
+    <h1>Get Function Name</h1>
+    <form onsubmit="return displayFunctionName();">
+        <label for="functionSelect">Select a function:</label>
+        <select id="functionSelect" required>
+            <option value="exampleFunction">exampleFunction</option>
+            <option value="anotherFunction">anotherFunction</option>
+        </select>
+        <br><br>
+        <button type="submit">Get Function Name</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

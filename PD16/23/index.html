@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematinis Skaičiuotuvas</title>
+  
+</head>
+<body>
+    <h1>Matematinis Skaičiuotuvas</h1>
+    <form>
+        <label for="num1">Pirmas skaičius:</label>
+        <input type="number" id="num1" required>
+        <br><br>
+        <label for="num2">Antras skaičius:</label>
+        <input type="number" id="num2" required>
+        <br><br>
+        <button onclick="return calculate('add');">Sudėtis</button>
+        <button onclick="return calculate('subtract');">Atimtis</button>
+        <button onclick="return calculate('multiply');">Daugyba</button>
+        <button onclick="return calculate('divide');">Dalyba</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
